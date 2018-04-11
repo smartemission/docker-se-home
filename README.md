@@ -16,7 +16,7 @@ Kubernetes.
 
 |Environment Variable|Default
 |---|---
-|HERON_LOG_LEVEL|10 (debug)
+|HOME_LOG_LEVEL|10 (debug)
 
 ## Architecture
 
