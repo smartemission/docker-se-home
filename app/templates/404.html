@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container">
+
+    <h1>Page not found - Pagina niet gevonden</h1>
+    <h2>
+        Did you enter a wrong path/url?
+    </h2>
+    <h2>
+        Heeft u een verkeerd pad/url opgegeven?
+    </h2>
+
+    <h1>Anyways: Greetings from SE-Partners</h1>
+    <p>
+        <img src="{{ url_for('static', filename='app/media/se-partners.jpg') }}"/>
+    </p>
+
+</div>
+{% endblock %}

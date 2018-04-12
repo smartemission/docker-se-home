@@ -46,8 +46,15 @@ def home():
 @app.route('/<string:page_name>')
 @nocache
 def page(page_name):
+    page = '%s%s' % (page_name, '.html')
+
+    # page must be under templates, otherwise try static page
+    template_file = os.path.join(os.path.dirname(__file__), 'templates', page)
+    if not os.path.isfile(template_file):
+        page = '404.html'
+
     # Let Flask/Jinja2 render the page
-    return render_template('%s%s' % (page_name, '.html'))
+    return render_template(page)
 
 
 if __name__ == '__main__':
