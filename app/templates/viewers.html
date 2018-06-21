@@ -41,11 +41,16 @@
             <td>Voor ruwe/ongekalibreerde Sensor data direct uit sensors (Intemo)</td>
         </tr>
         <tr>
-            <td><a href="grafana/"><img src="{{ url_for('static', filename='app/media/grafana.jpg') }}"/><br/>Grafana Dashboard</a></td>
+            <td><a href="grafana/"><img src="{{ url_for('static', filename='app/media/grafana.jpg') }}"/><br/>Grafana Dashboard - Calibratie</a></td>
             <td>
-                Viewer t.b.v. kalibratie: o.a. dashboards voor ruwe RIVM SOS data en Smart Emission gekalibreerde data
+                Viewer t.b.v. kalibratie: dashboards voor ruwe RIVM SOS data en Smart Emission gekalibreerde data
                 uit InfluxDB.
-                Login als user 'user' en paswoord 'user'.
+            </td>
+        </tr>
+        <tr>
+            <td><a href="grafana-dc/"><img src="{{ url_for('static', filename='app/media/grafana.jpg') }}"/><br/>Grafana Dashboard - Data Collector</a></td>
+            <td>
+                Viewer t.b.v. de SE InfluxDB Data Collector, toont m.n. data vanuit EU JRC AirSensEUR sensoren.
             </td>
         </tr>
 
